@@ -1,0 +1,23 @@
+[
+    {
+        "owner": "octocat",
+        "name": "Hello-World",
+        "description": "Un dépôt de démonstration pour découvrir GitHub.",
+        "url": "https://github.com/octocat/Hello-World",
+        "language": "Markdown"
+    },
+    {
+        "owner": "facebook",
+        "name": "react",
+        "description": "Une bibliothèque JavaScript pour créer des interfaces utilisateur.",
+        "url": "https://github.com/facebook/react",
+        "language": "JavaScript"
+    },
+    {
+        "owner": "microsoft",
+        "name": "vscode",
+        "description": "L'éditeur de code Visual Studio Code.",
+        "url": "https://github.com/microsoft/vscode",
+        "language": "TypeScript"
+    }
+]
