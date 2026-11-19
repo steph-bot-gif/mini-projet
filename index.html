@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dashboard/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Tableau de bord</h1>
+            <p>Bienvenue sur ton espace de gestion commerciale.</p>
+        </header>
+
+        <section class="statistiques">
+
+            <div class="carte">
+                <h3>Produits</h3>
+                <p id="nombreProduits">0</p>
+            </div>
+
+            <div class="carte">
+                <h3>chiffre d'affaires</h3>
+                <p id="chiffreAffaires">0 FCFA</p>
+            </div>
+
+            <div class="carte">
+                <h3>Commandes</h3>
+                <p id="nombreCommandes">0</p>
+            </div>
+
+            <div class="carte">
+                <h3>Clients</h3>
+                <p id="nombreClients">0</p>
+            </div>
+            
+        </section>
+
+        <section class="commandes">
+
+            <h2>Dernières commandes</h2>
+
+            <ul id="listeCommandes"></ul>
+
+        </section>
+
+        <section class="ventes">
+
+            <h2>Evolution des ventes</h2>
+
+            <div id="graphique"></div>
+
+
+        </section>
+
+    </div>
+    
+    <script src="/dashboard/dashboard.js"></script>
+</body>
+</html>
