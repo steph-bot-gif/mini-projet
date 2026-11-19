@@ -1,63 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dashboard/dashboard.css">
-    <title>Dashboard</title>
+    <meta name="description" content="Une sélection de dépôts GitHub favoris.">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mes dépôts favoris</title>
 </head>
 <body>
-
-    <div class="container">
-
-        <header>
-            <h1>Tableau de bord</h1>
-            <p>Bienvenue sur ton espace de gestion commerciale.</p>
+    <main class="container">
+        <header class="page-header">
+            <p class="eyebrow">Ma sélection GitHub</p>
+            <h1>Mes dépôts favoris</h1>
+            <p>Des projets que je garde à portée de main.</p>
         </header>
 
-        <section class="statistiques">
-
-            <div class="carte">
-                <h3>Produits</h3>
-                <p id="nombreProduits">0</p>
-            </div>
-
-            <div class="carte">
-                <h3>chiffre d'affaires</h3>
-                <p id="chiffreAffaires">0 FCFA</p>
-            </div>
-
-            <div class="carte">
-                <h3>Commandes</h3>
-                <p id="nombreCommandes">0</p>
-            </div>
-
-            <div class="carte">
-                <h3>Clients</h3>
-                <p id="nombreClients">0</p>
-            </div>
-            
+        <section aria-labelledby="repositories-heading">
+            <h2 id="repositories-heading">Dépôts enregistrés</h2>
+            <p id="status" class="status" role="status" aria-live="polite">Chargement des dépôts…</p>
+            <ul id="repository-list" class="repository-list" aria-describedby="status"></ul>
         </section>
-
-        <section class="commandes">
-
-            <h2>Dernières commandes</h2>
-
-            <ul id="listeCommandes"></ul>
-
-        </section>
-
-        <section class="ventes">
-
-            <h2>Evolution des ventes</h2>
-
-            <div id="graphique"></div>
-
-
-        </section>
-
-    </div>
-    
-    <script src="/dashboard/dashboard.js"></script>
+    </main>
+    <script src="./script.js" defer></script>
 </body>
 </html>
